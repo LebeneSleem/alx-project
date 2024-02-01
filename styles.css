@@ -1,0 +1,118 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu a {
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #ddd; /* Change the hover color as needed */
+}
+
+.recipes-dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.recipes-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.recipes-menu li {
+    padding: 8px;
+    text-align: left;
+}
+
+.recipes-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.recipes-menu a:hover {
+    background-color: #ddd;
+}
+
+.recipes-dropdown:hover .recipes-menu {
+    display: block;
+}
+
+.search {
+    margin-right: 15px;
+}
+
+.search input {
+    padding: 5px;
+}
+
+.blue-banner {
+    background: url('images/banner.jpg') center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.banner {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+.banner-space {
+    background-color: #0000;
+    color: #fff;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.food-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-item {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.food-item img {
+    max-width: 100%;
+}
